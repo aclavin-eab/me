@@ -1,0 +1,46 @@
+body, .bottomCover{
+    background-color: #eef;
+}
+.head{
+    position: relative;
+    width: 155px; /*89.74359%*/
+    height: 172px /*111.428571 precent*/;
+    margin: 0 auto;
+}
+.face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #DDa08f;
+}
+.beard{
+    position: absolute;
+    bottom: -206px;
+    left: 14px;
+    border-top: 211px solid #1B1515;
+    border-left: 84px solid transparent;
+    border-right: 51px solid transparent;
+}
+.bottomCover{
+    position: absolute;
+    bottom: -215px;
+    left: 40px;
+    height: 150px;
+    width: 100px;
+}
+.bottomCover:before, .bottomCover:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -26px;
+    border-bottom: 22px solid #eef;
+    border-left: 20px solid transparent;
+    border-right: 23px solid transparent;
+}
+.bottomCover:after{
+    right: -20px;
+    left: initial;
+}
