@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Crypto Colors</title>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/styles.css"/>
+	<script src="js/jquery-1.8.3.js"></script>
+	<script src="js/ui/jquery.ui.core.js"></script>
+	<script src="js/ui/jquery.ui.widget.js"></script>
+	<script src="js/ui/jquery.ui.mouse.js"></script>
+	<script src="js/ui/jquery.ui.sortable.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <ul id="sortable">
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  
+	  
+    </ul>
+    
+  </div>
+    <div class="score">
+  	  <p>Level: <span id="level">1</span> </p>
+  	  <p>Time: <span id="time">0</span> </p>
+      <p>Moves: <span id="moves">0</span> </p>
+      <p>Completion: <span id="completion">0</span> % </p>
+      <p class="about hide">Crypto Colors is an encryption game. The color swatches 
+      appear in random order and your goal is to decrypt the order. Arrange them 
+      by their apparent lightness (brightest colors first, darkest last), by clicking on them
+      and moving them to their appropriate location. Watch closely for 
+      the blocks to seperate from the encrypted bunch with thin white gaps. They will then 
+      lock in place, and you will be one step closer to decrypting the code. This game 
+      was created by Andrew Clavin, Brandon Mahone, and Raymond Zapp as a part of the CESI / University of Portsmouth Game Jam Game Jam 2012<span> Close</span>
+      </p>
+    </div>
+  <div id="scores" class="hide">
+  <h1> This Level </h1>
+  <p class="complete"> Points <span>0</span></p>
+  <p class="time"> Time <span>0</span></p>
+  <p class="tbonus"> Time Bonus <span>0</span></p>
+  <p class="moves"> Moves <span>0</span></p>
+  <p class="mbonus"> Move Bonus <span>0</span></p>
+  <p class="points"> Points Earned <span>0</span></p>
+  <h1 class="total"> Game Total: <span>0</span> </h1>
+  <h1 id="next">Next Level</h1>
+  </div>
+  </div>
+  <img class="logo" src="gamejam.jpg"/>
+<footer><h1> Crypto Colors | <span class="about">About</span></h1></footer>
+</body>
+</html>

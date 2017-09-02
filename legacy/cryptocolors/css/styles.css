@@ -1,0 +1,195 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  overflow: hidden;
+}
+
+#sortable { 
+  list-style-type: none;
+  padding: 0; 
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 10%;
+  margin: 0 auto;
+  padding-top: 10%;
+  min-height: 100%;
+  transition: .5s ease-in-out;
+  
+}
+
+#wrapper {
+  width: 90%;
+  margin-left: 5%;
+  min-height: 50%;
+}
+
+
+#sortable li { 
+  float: left; 
+  width: 100px; 
+  height: 100px; 
+  transition: .05s ease-in-out;
+}
+
+#sortable li.locked {
+border-style:solid;
+border-width:2px;
+width: 96px;
+height: 96px;
+border-color: #fff;
+}
+
+#sortable li.locked div {
+}
+
+html, body {
+  height: 100%;
+}
+
+div.score {
+  margin-left: 5%;
+  overflow: hidden;
+  padding-left: 100px;
+  padding-top: 36px;
+  width: 79%;
+}
+
+div.score p {
+  float: left;
+  margin-right: 50px;
+}
+
+#sortable.hide li {
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+
+#scores {
+  position: absolute;
+  top: 25%;
+  width: 60%;
+  left: 20%;
+  padding-left: 20px;
+  background-color: rgba(250, 250, 250, .6);
+  overflow: hidden;
+  min-height: 200px;
+  
+}
+#scores p, #scores h1 {
+  background-color: #ffffff;
+}
+
+#scores h1 {
+  font-size: 1.35em;
+  margin-top: 1em;
+  margin-bottom: .3em;
+  width: 10em;
+  
+}
+
+#scores h1.total {
+  font-size: 1.15em;
+  margin-top: .65em;
+  padding-bottom: 2em;
+}
+
+#scores p {
+  font-size: .875em;
+  margin-bottom: .1em;
+  width: 13em;
+  
+}
+
+#scores p span {
+  float: right;
+}
+
+#scores #next {
+  float: right;
+  margin-right: 40px;
+  color: #44bb77;
+  margin-top: -2.9em;
+  cursor: pointer;
+}
+
+@media all and (max-width: 600px) and (min-width: 0px){
+
+  #scores #next {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -1em;
+  }
+  
+  div.score {
+    margin-left: 5%;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-top: 36px;
+    width: 79%;
+  }
+  
+  footer {
+  padding-left: 10px;
+ }
+
+  div.score p {
+  float: none;
+  margin-right: 50px;
+  margin-top: 5px;
+  }
+}
+
+#scores.hide {
+  height: 0;
+  overflow: hidden;
+  min-height: 0;
+}
+
+div.score p{
+  font-weight: 600;
+  }
+  
+div.score p span {
+  font-weight: 200;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  font-size: 1.25em;
+  margin-left: 5%;
+  padding-left: 76px;
+}
+
+footer span {
+  cursor: pointer;
+  color: #44aa44;
+}
+
+div.score p.about {
+  font-weight: 200;
+  width: 35em;
+  margin-top: 50px;
+  float: none;
+  line-height: 1.2em;
+  font-size: .9em;
+
+}
+
+div.score p.about span {
+  float: right;
+  cursor: pointer;
+  color: #44aa44;
+  margin-top: 10px;
+}
+
+div.score p.hide {
+display: none;
+}
+
+img.logo {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}

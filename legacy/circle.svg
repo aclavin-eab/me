@@ -1,0 +1,183 @@
+var svgns = "http://www.w3.org/2000/svg";
+
+var svg = document.createElementNS(svgns, "svg");
+svg.setAttribute("width", 556);
+svg.setAttribute("height", 556);
+svg.setAttribute("viewBox", "0 0 50 50");
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 25);
+shape.setAttribute("fill", "#22ee99");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 24);
+shape.setAttribute("fill", "#22ee90");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 23);
+shape.setAttribute("fill", "#22ee80");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 22);
+shape.setAttribute("fill", "#22e080");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 21);
+shape.setAttribute("fill", "#22c880");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 20);
+shape.setAttribute("fill", "#22c080");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 19);
+shape.setAttribute("fill", "#22b880");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 18);
+shape.setAttribute("fill", "#21a880");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 17);
+shape.setAttribute("fill", "#1fa883");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 16);
+shape.setAttribute("fill", "#1da886");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 15);
+shape.setAttribute("fill", "#1aa889");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 14);
+shape.setAttribute("fill", "#17a88d");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 13);
+shape.setAttribute("fill", "#13a892");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 12);
+shape.setAttribute("fill", "#10a897");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 11);
+shape.setAttribute("fill", "#22a89e");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 10);
+shape.setAttribute("fill", "#22a8a4");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 9);
+shape.setAttribute("fill", "#22a8aa");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 8);
+shape.setAttribute("fill", "#22a8b2");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 7);
+shape.setAttribute("fill", "#22a8b8");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 6);
+shape.setAttribute("fill", "#22a8be");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 5);
+shape.setAttribute("fill", "#22a8c4");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 4);
+shape.setAttribute("fill", "#22a8cb");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 3);
+shape.setAttribute("fill", "#22a8d4");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 2);
+shape.setAttribute("fill", "#22a8da");
+svg.appendChild(shape);
+
+var shape = document.createElementNS(svgns, "circle");
+shape.setAttribute("cx", 25);
+shape.setAttribute("cy", 25);
+shape.setAttribute("r", 1);
+shape.setAttribute("fill", "#22a8e2");
+svg.appendChild(shape);
+
+document.body.appendChild(svg);

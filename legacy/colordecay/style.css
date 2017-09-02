@@ -1,0 +1,71 @@
+#one {
+  width: 100%;
+  position: fixed;
+  top: 3%;
+  height: 13%;
+  left: 0;
+  background-color: #66ddff;
+}
+
+#two {
+  width: 100%;
+  position: fixed;
+  top: 17%;
+  height: 13%;
+  left: 0;
+  background-color: #66ddff;
+}
+
+#three {
+  width: 100%;
+  position: fixed;
+  top: 31%;
+  height: 13%;
+  left: 0;
+  background-color: #66ddff;
+}
+
+div div {
+  opacity: .75;
+  width: 14.3%;
+  height: 100%;
+  background-color: inherit;
+  float: left;
+}
+
+#four {
+  width: 100%;
+  position: fixed;
+  bottom: 3%;
+  height: 12%;
+  left: 0;
+  background-color: #66ddff;
+}
+
+#five {
+  width: 100%;
+  position: fixed;
+  bottom: 16%;
+  height: 12%;
+  left: 0;
+  background-color: #66ddff;
+}
+
+#six {
+  width: 100%;
+  position: fixed;
+  bottom: 29%;
+  height: 12%;
+  left: 0;
+  background-color: #66ddff;
+}
+
+#four div, #five div, #six div {
+  float: right;
+}
+
+#reset {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
