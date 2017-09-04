@@ -29,7 +29,7 @@
 		// Otherwise, we're most likely dealing with a named color
 		return colors[jQuery.trim(color).toLowerCase()];
 	}
-	
+
   $.fn.smoothChange = function() {
     // Plugin code
     $(this).data("originalColor", $(this).css('background-color'));
@@ -50,7 +50,7 @@
  	  bred = 256;
  	  bfix = -1;
  	};
- 	
+
  	if (rred < 17) {
  	  rred = 16;
  	  rfix = 1;
@@ -67,15 +67,15 @@
  	bred = bred.toString(16);
  	gred = gred.toString(16);
  	var colour = '#' + rred + gred + bred;
- 
+
     return this.each(function() {
       // Do something to each item
       $(this).css('background-color', colour);
 
     });
-   
+
   };
-  
+
   $.fn.changeColour = function() {
     // Plugin code
     $(this).data("originalColor", $(this).css('background-color'));
@@ -97,12 +97,41 @@
  	bred = bred.toString(16);
  	gred = gred.toString(16);
  	var colour = '#' + rred + gred + bred;
- 	
+
     return this.each(function() {
       // Do something to each item
       $(this).css('background-color', colour);
     });
-   
+
+  };
+
+  $.fn.changeTextColour = function() {
+    // Plugin code
+    $(this).data("originalColor", $(this).css('color'));
+    var startColor = getRGB($(this).data("originalColor"));
+ 	var rando = Math.floor(Math.random() * 3);
+ 	var rred = (startColor[0] + rando);
+ 	var gred = (startColor[1] + rando);
+ 	var bred = (startColor[2] + rando);
+ 	if (rred > 256) {
+ 	  rred = 17;
+ 	};
+ 	if (gred > 256) {
+ 	  gred = 17;
+ 	};
+ 	if (bred > 256) {
+ 	  bred = 17;
+ 	};
+ 	rred = rred.toString(16);
+ 	bred = bred.toString(16);
+ 	gred = gred.toString(16);
+ 	var colour = '#' + rred + gred + bred;
+
+    return this.each(function() {
+      // Do something to each item
+      $(this).css('color', colour);
+    });
+
   };
 
 })(jQuery);

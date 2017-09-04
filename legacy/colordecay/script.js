@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  alert('Make sure to click on anything and everything.');
   setInterval(function() {
     $('#one').changeColour();
     $('#two').changeColour();
@@ -21,6 +20,18 @@ $(document).ready(function() {
     $('#threee').changeColour();
   }, 50);
   setInterval(function() {
+    $('#letter1').changeTextColour();
+    $('#letter2').changeTextColour();
+    $('#letter3').changeTextColour();
+    $('#letter4').changeTextColour();
+    $('#letter5').changeTextColour();
+    $('#letter6').changeTextColour();
+    $('#letter7').changeTextColour();
+    $('#letter8').changeTextColour();
+    $('#letter9').changeTextColour();
+    $('#letter10').changeTextColour();
+}, 60);
+  setInterval(function() {
     $('#four').smoothChange();
     $('#five').smoothChange();
     $('#six').smoothChange();
@@ -40,12 +51,12 @@ $(document).ready(function() {
     $('#fivee').smoothChange();
     $('#sixe').smoothChange();
   }, 50);
-  
+
   $('div').click(function(event) {
     $('div').css('background-color', $(this).css('background-color'));
     event.stopPropagation();
   });
-  
+
   $('#reset').toggle(function() {
     $('#reset').css('background-color', '#000');
   }, function() {
