@@ -1,6 +1,10 @@
 body, .bottomCover{
     background-color: #eef;
 }
+h1, p{
+    position: relative;
+    z-index: 10;
+}
 .head{
     position: relative;
     width: 152px; /*89.74359%*/
