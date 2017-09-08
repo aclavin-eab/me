@@ -18,8 +18,21 @@
     <body>
         <h1>Hello, I'm Andrew</h1>
         <p>
-            I'm a front end developer, currently freelancing with Arras Keathley. I like to imagine websites as paintings pigmented in binary,
-            suspended in hexidecimal emulsion. When I'm not writing code I like to paint in the more traditional sense and explore Cleveland by bike.
+            I'm a front end developer<span class="extra" id="extra">, currently freelancing with Arras Keathley. I like to imagine websites as paintings pigmented in binary,
+            suspended in hexidecimal emulsion. </span><button onclick="
+                if(document.getElementById('extra').className.indexOf('extra') !== -1)
+                    {
+                        document.getElementById('extra').className = document.getElementById('extra').className.replace('extra', '');
+                    }
+                else{
+                    document.getElementById('extra').className = 'extra';
+                }
+                ">
+                <span class="on">...</span><span class="off">TLDR;</span>
+            </button>When I'm not coding, I like to
+            <span class="js_interest ">paint in the more traditional sense</span>
+            and
+            <span class="js_interest ">explore Cleveland by bike</span>.
         </p>
         <div class="head">
             <div class="face"></div>
