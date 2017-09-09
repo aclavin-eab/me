@@ -17,8 +17,8 @@
     </head>
     <body>
         <h1>Hello, I'm Andrew</h1>
-        <p>
-            I'm a front end developer<span class="extra" id="extra">, currently freelancing with Arras Keathley. I like to imagine websites as paintings pigmented in binary,
+        <div class="textContent">
+            <h2>I'm a front end developer</h2><span class="extra" id="extra">, currently freelancing with Arras Keathley. I like to imagine websites as paintings pigmented in binary,
             suspended in hexidecimal emulsion. </span><button onclick="
                 if(document.getElementById('extra').className.indexOf('extra') !== -1)
                     {
@@ -29,23 +29,26 @@
                 }
                 ">
                 <span class="on">...</span><span class="off">TLDR;</span>
-            </button>When I'm not coding, I like to
-            <span class="js_interest ">paint in the more traditional sense</span>
-            and
-            <span class="js_interest ">explore Cleveland by bike</span>.
-        </p>
+            </button>
+            <span class="interactiveText">
+                When I'm not coding, I like to
+                <span class="js_interest ">paint in the more traditional sense</span><button class="js_changeInterest">X</button>
+                and
+                <span class="js_interest ">explore Cleveland by bike</span><button class="js_changeInterest">X</button>.
+            </span>
+        </div>
         <div class="head">
-            <div class="face"></div>
-            <div class="hair"></div>
+            <div class="face js_frame" data-attr-frame-group="1"></div>
+            <div class="hair js_frame" data-attr-frame-group="2"></div>
             <div class="hairCover"><div></div></div>
             <div class="beard"></div>
             <div class="sideburns"></div>
             <div class="bottomCover"></div>
-            <div class="mouth"></div>
+            <div class="mouth js_frame js_frame_before js_frame_after" data-attr-frame-group="3"></div>
             <div class="leftBrow"></div>
             <div class="rightBrow"></div>
-            <div class="leftEye"></div>
-            <div class="rightEye"></div>
+            <div class="leftEye js_frame" data-attr-frame-group="3"></div>
+            <div class="rightEye js_frame" data-attr-frame-group="3"></div>
         </div>
         <script src="./script.js"></script>
     </body>

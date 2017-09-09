@@ -1,12 +1,24 @@
 body, .bottomCover{
     background-color: #eef;
 }
-h1, p{
+h1, .textContent{
     position: relative;
     z-index: 10;
 }
-.head{
+h2{
+    float: left;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+.interactiveText{
+    clear: both;
+    display: block;
+}
+.head, .head *, .head *:before, .head *:after{
     position: absolute;
+}
+.head{
     width: 152px; /*89.74359%*/
     height: 172px; /*111.428571 precent*/
     left: 50%;
@@ -14,7 +26,6 @@ h1, p{
     top: 200px;
 }
 .face{
-    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -25,7 +36,6 @@ h1, p{
     background-size: cover;
 }
 .beard{
-    position: absolute;
     bottom: -206px;
     left: 14px;
     border-top: 210px solid #1B1515;
@@ -37,7 +47,6 @@ h1, p{
     top: -231px;
     left: -66px;
     display: block;
-    position: absolute;
     overflow: hidden;
     border-bottom: 23px solid #1B1515;
     border-left: 29px solid transparent;
@@ -52,7 +61,6 @@ h1, p{
 
 }
 .bottomCover{
-    position: absolute;
     bottom: -213px;
     left: 38px;
     height: 150px;
@@ -61,7 +69,6 @@ h1, p{
 .bottomCover:before, .bottomCover:after{
     content: '';
     display: block;
-    position: absolute;
     top: -20px;
     left: -26px;
     border-bottom: 22px solid #eef;
@@ -73,7 +80,6 @@ h1, p{
     left: initial;
 }
 .mouth{
-    position: absolute;
     background-image: url(test.png);
     background-position: bottom;
     bottom: -24px;
@@ -88,7 +94,6 @@ h1, p{
 .mouth:before{
     content: '';
     display: block;
-    position: absolute;
     top: 0;
     left: 11px;
     width: 56px;
@@ -98,7 +103,6 @@ h1, p{
     border-bottom-right-radius: 42% 100%;
 }
 .sideburns{
-    position: absolute;
     bottom: -11px;
     left: 1px;
     border-right: 16px solid #1B1515;
@@ -108,7 +112,6 @@ h1, p{
 }
 .sideburns:after{
     content: '';
-    position: absolute;
     bottom: -108px;
     right: -120px;
     left: auto;
@@ -118,7 +121,6 @@ h1, p{
     transform: rotate(63deg);
 }
 .hair{
-    position: absolute;
     top: -60px;
     left: -9px;
     height: 60px;
@@ -129,7 +131,6 @@ h1, p{
 }
 .hair:before{
     content: '';
-position: absolute;
 background-color: #351F10;
 bottom: -81px;
 right: -18px;
@@ -141,7 +142,6 @@ background-size: cover;
 }
 .hair:after{
     content: '';
-    position: absolute;
     background-color: #42291D;
     bottom: -107px;
     left: -12px;
@@ -152,7 +152,6 @@ background-size: cover;
     background-size: cover;
 }
 .hairCover{
-    position: absolute;
     height: 109px;
     width: 31px;
     left: -39px;
@@ -160,7 +159,6 @@ background-size: cover;
 }
 .hairCover:before{
     content: '';
-    position: absolute;
     height: 57px;
     width: 151px;
     left: 9px;
@@ -170,7 +168,6 @@ background-size: cover;
 }
 .hairCover:after{
     content: '';
-    position: absolute;
     height: 22px;
     width: 49px;
     left: 165px;
@@ -179,7 +176,6 @@ background-size: cover;
     transform: rotate(31deg);
 }
 .hairCover div{
-    position: absolute;
     height: 38px;
     width: 15px;
     left: 197px;
@@ -189,7 +185,6 @@ background-size: cover;
 }
 .hairCover div:before{
     content: '';
-    position: absolute;
     height: 38px;
     width: 30px;
     left: 11px;
@@ -199,7 +194,6 @@ background-size: cover;
 }
 .hairCover div:after{
     content: '';
-    position: absolute;
     height: 63px;
     width: 27px;
     left: 31px;
@@ -207,7 +201,6 @@ background-size: cover;
     background-color: #eef;
 }
 .leftBrow{
-    position: absolute;
     height: 13px;
     width: 26px;
     top: 62px;
@@ -216,17 +209,13 @@ background-size: cover;
 }
 .leftBrow:after{
     content: '';
-    position: absolute;
-    bottom: -3px;
-    right: -16px;
-    transform: rotate(36deg);
-    border-top: 11px solid #24130D;
-    border-left: 8px solid transparent;
-    border-right: 14px solid transparent;
+    bottom: 0px;
+    right: -18px;
+    border-bottom: 13px solid #24130D;
+    border-right: 18px solid transparent;
 }
 .leftBrow:before{
     content: '';
-    position: absolute;
     left: -18px;
     bottom: -5px;
     transform: rotate(-58deg);
@@ -235,7 +224,6 @@ background-size: cover;
     border-right: 8px solid transparent;
 }
 .rightBrow{
-    position: absolute;
     top: 60px;
     right: -3px;
     border-bottom: 18px solid #2D1813;
@@ -244,7 +232,6 @@ background-size: cover;
     transform: rotate(8deg);
 }
 .leftEye{
-    position: absolute;
     top: 94px;
     left: 35px;
     height: 7px;
@@ -256,7 +243,6 @@ background-size: cover;
 }
 .leftEye:before{
     content: '';
-    position: absolute;
     left: -11px;
     top: 1px;
     border-right: 12px solid #FFF;
@@ -266,7 +252,6 @@ background-size: cover;
 }
 .leftEye:after{
     content: '';
-    position: absolute;
     right: -13px;
     top: 2px;
     border-left: 15px solid #FFF;
@@ -275,7 +260,6 @@ background-size: cover;
     transform: rotate(20deg);
 }
 .rightEye{
-    position: absolute;
     top: 94px;
     right: 23px;
     height: 6px;
@@ -287,7 +271,6 @@ background-size: cover;
 }
 .rightEye:before{
     content: '';
-    position: absolute;
     left: -8px;
     top: 1px;
     border-right: 8px solid #FFF;
@@ -297,7 +280,6 @@ background-size: cover;
 }
 .rightEye:after{
     content: '';
-    position: absolute;
     right: -9px;
     top: 1px;
     border-left: 10px solid #FFF;
