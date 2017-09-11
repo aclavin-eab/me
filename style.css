@@ -31,8 +31,7 @@ h2{
     height: 100%;
     width: 100%;
     background-color: #DDa08f;
-    background: radial-gradient(circle at center, rgba(221, 160, 143, 0.94) 0%, rgba(221, 160, 143, .97) 100%), url(paisley.png);
-    background-size: cover;
+    background: radial-gradient(circle at center, rgba(221, 160, 143, 0.94) 0%, rgba(221, 160, 143, .97) 100%), url(bike.jpg);
     background-size: cover;
 }
 .beard{
@@ -87,7 +86,7 @@ h2{
     width: 78px;
     height: 28px;
     background-color: #913C4C;
-    background: radial-gradient(circle at center top, rgba(145, 60, 76, 0.5) 0%, rgba(145, 60, 76, 0.95) 100%), url(test.png) bottom;
+    background: radial-gradient(circle at center top, rgba(145, 60, 76, 0.5) 0%, rgba(145, 60, 76, 0.95) 100%), url(test.png) bottom / cover;
     border-bottom-right-radius: 42% 100%;
     border-bottom-left-radius: 50% 100%;
 }
@@ -126,7 +125,7 @@ h2{
     height: 60px;
     width: 174px;
     background-color: #362321;
-    background: linear-gradient(to bottom, rgba(66, 42, 38, 0.98) 0%, rgba(66, 42, 38, 0.93) 65%, rgba(66, 42, 38, 0.75) 100%), url(flowers.jpg);
+    background: linear-gradient(to bottom, rgba(66, 42, 38, 0.93) 0%, rgba(66, 42, 38, 0.83) 65%, rgba(66, 42, 38, 0.65) 100%), url(paintbrush.jpg);
     background-size: cover;
 }
 .hair:before{
@@ -137,8 +136,7 @@ right: -18px;
 left: auto;
 height: 81px;
 width: 28px;
-background: linear-gradient(to right, rgba(66, 42, 38, 0.75) 0%, rgba(66, 42, 38, 1) 100%), url(flowers.jpg);
-background-size: cover;
+background: linear-gradient(to right, rgba(66, 42, 38, 0.25) 0%, rgba(66, 42, 38, 0.75) 100%), url(paintbrush.jpg) bottom center;
 }
 .hair:after{
     content: '';
@@ -148,8 +146,7 @@ background-size: cover;
     height: 113px;
     width: 28px;
     transform: rotate(15.5deg);
-    background: linear-gradient(to left, rgba(66, 42, 38, 0.8) 0%, rgba(66, 42, 38, 0.9) 100%), url(flowers.jpg);
-    background-size: cover;
+    background: linear-gradient(to left, rgba(66, 42, 38, 0.5) 0%, rgba(66, 42, 38, 0.8) 100%), url(paintbrush.jpg) center center;
 }
 .hairCover{
     height: 109px;
@@ -238,8 +235,7 @@ background-size: cover;
     width: 15px;
     background-color: #607A5E;
     transform: rotate(-7deg);
-    background-image: url(test.png);
-    background-position: bottom;
+    background: url(test.png) bottom / cover;
 }
 .leftEye:before{
     content: '';
@@ -266,8 +262,7 @@ background-size: cover;
     width: 13px;
     background-color: #607A5E;
     transform: rotate(4deg);
-    background-image: url(test.png);
-    background-position: bottom;
+    background: url(test.png) bottom / cover;
 }
 .rightEye:before{
     content: '';
