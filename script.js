@@ -160,7 +160,6 @@ AC.brush = function(canvas, paint){
         }
     });
     brush.primeCanvas = function(){
-        console.log("yo", this, canvas, paint);
         canvas.form.primedFrames = {};
         Array.prototype.forEach.call(canvas.form.displayFrames, function(frame){
             if(canvas.form.primedFrames[frame.getAttribute('data-attr-frame-group')]){
@@ -169,7 +168,6 @@ AC.brush = function(canvas, paint){
                 canvas.form.primedFrames[frame.getAttribute('data-attr-frame-group')] = [frame];
             }
         });
-        console.log("yo yo", canvas, canvas.form.primedFrames);
     }
     return brush;
 }(AC.canvas, AC.paint);

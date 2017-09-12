@@ -1,19 +1,49 @@
 body, .bottomCover{
     background-color: #eef;
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 200;
+    margin-top: 43px;
+    margin-bottom: 0;
 }
 h1, .textContent{
     position: relative;
     z-index: 10;
+    text-align: center;
+}
+.textContent{
+    font-size: 1em;
+    font-weight: 300;
+    width: 400px;
+    margin: 0 auto;
+    line-height: 1.15em;
 }
 h2{
-    float: left;
-    font-size: 1em;
+    font-size: 1.65em;
     margin: 0;
     padding: 0;
+    font-weight: 100;
+    margin-bottom: 25px;
 }
 .interactiveText{
     clear: both;
     display: block;
+}
+.interest{
+    font-family: 'Source Code Pro', monospace;
+    border: 1px solid black;
+    margin: 3px 20px;
+    padding: 5px 0;
+    position: relative;
+}
+.interest button{
+    position: absolute;
+    top: -2px;
+    right: 0;
+    padding: 3px;
+    cursor: pointer;
 }
 .head, .head *, .head *:before, .head *:after{
     position: absolute;
@@ -22,8 +52,9 @@ h2{
     width: 152px; /*89.74359%*/
     height: 172px; /*111.428571 precent*/
     left: 50%;
-    margin-left: -76px;
-    top: 200px;
+    margin-left: -84px;
+    top: 232px;
+    z-index: -1;
 }
 .face{
     top: 0;
