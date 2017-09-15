@@ -94,12 +94,17 @@ AC.paint = {
         {
             name: 'weezer',
             text: 'listening to Weezer',
-            image: 'test2.png'
+            image: 'weezer.jpg'
         },
         {
             name: 'pierogies',
             text: 'Eating Pierogies',
             image: 'test2.png'
+        },
+        {
+            name: 'linear algebra',
+            text: 'Learning Linear Algebra',
+            image: 'linebra.jpg'
         }
     ]
 };
